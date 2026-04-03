@@ -112,7 +112,7 @@ The portfolio uses a comprehensive design system with:
 - Interactive tags with ripple effects
 - Hover animations
 
-## 📱 Responsive Design
+## Responsive Design
 
 The portfolio is fully responsive with breakpoints at:
 - **Desktop**: > 968px
