@@ -2,7 +2,7 @@
 
 A modern, premium portfolio website built with React, featuring stunning animations, responsive design, and a beautiful dark theme.
 
-## 🚀 Features
+## Features
 
 - **Modern React Architecture**: Built with React 18 and Vite for optimal performance
 - **Premium Design**: Glassmorphism effects, vibrant gradients, and smooth animations
@@ -16,7 +16,7 @@ A modern, premium portfolio website built with React, featuring stunning animati
 - **SEO Optimized**: Proper meta tags and semantic HTML
 - **Smooth Scrolling**: Enhanced navigation with active section highlighting
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Frontend Framework**: React 18
 - **Build Tool**: Vite
@@ -24,7 +24,7 @@ A modern, premium portfolio website built with React, featuring stunning animati
 - **Icons**: Font Awesome 6
 - **Fonts**: Inter & JetBrains Mono (Google Fonts)
 
-## 📦 Installation
+## Installation
 
 1. Install dependencies:
 ```bash
@@ -46,7 +46,7 @@ npm run build
 npm run preview
 ```
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 portfolio/
@@ -70,7 +70,7 @@ portfolio/
 └── README.md               # This file
 ```
 
-## 🎨 Design System
+## Design System
 
 The portfolio uses a comprehensive design system with:
 - **Color Palette**: Premium dark theme with vibrant accent colors
@@ -79,7 +79,7 @@ The portfolio uses a comprehensive design system with:
 - **Animations**: Smooth transitions and micro-interactions
 - **Responsive Breakpoints**: Mobile-first approach
 
-## 🌟 Key Components
+## Key Components
 
 ### Navbar
 - Fixed navigation with scroll detection
@@ -119,7 +119,7 @@ The portfolio is fully responsive with breakpoints at:
 - **Tablet**: 640px - 968px
 - **Mobile**: < 640px
 
-## 🔧 Customization
+## Customization
 
 To customize the portfolio:
 
@@ -128,7 +128,7 @@ To customize the portfolio:
 3. **Fonts**: Change font imports in `src/index.css`
 4. **Animations**: Adjust animation timings in CSS or component logic
 
-## 📄 Migration from Vanilla Version
+## Migration from Vanilla Version
 
 The original vanilla HTML/CSS/JS files have been moved to the `old-vanilla-version/` directory for reference.
 
@@ -138,18 +138,18 @@ The original vanilla HTML/CSS/JS files have been moved to the `old-vanilla-versi
 - Enhanced with React hooks for state management
 - Improved code organization and reusability
 
-## 🚀 Deployment
+## Deployment
 
 The app can be deployed to:
 - **Vercel**: `vercel deploy`
 - **Netlify**: Drag and drop the `dist` folder
 - **GitHub Pages**: Use `gh-pages` package
 
-## 📝 License
+## License
 
 © 2026 Vijaya Sai Latha Pulipati. Built with passion and code.
 
-## 🤝 Contact
+## Contact
 
 - **Email**: viayasailatha@gmail.com
 - **GitHub**: [pvsailatha711](https://github.com/pvsailatha711)
