@@ -43,7 +43,7 @@ function Navbar() {
       <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
         <div className="navbar-inner">
           <a href="#home" className="navbar-logo-avatar" onClick={() => handleNavClick('#home')} id="navbar-logo">
-            <img src="/profile.png" alt="Latha Pulipati" className="navbar-avatar-img" />
+            <img src="profile.png" alt="Latha Pulipati" className="navbar-avatar-img" />
           </a>
 
           <div className="navbar-links">

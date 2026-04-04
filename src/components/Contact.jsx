@@ -52,7 +52,6 @@ function Contact() {
                   <i className={link.icon} />
                 </div>
                 <div className="contact-link-text">
-                  <strong>{link.title}</strong>
                   <span>{link.value}</span>
                 </div>
                 <i className="fas fa-arrow-right" style={{ marginLeft: 'auto', fontSize: '0.75rem', opacity: 0.4 }} />

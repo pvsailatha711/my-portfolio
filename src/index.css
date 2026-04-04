@@ -65,36 +65,13 @@ html {
 
 body {
   font-family: var(--font-sans);
-  background-color: var(--bg-primary);
+  background-color: #000;
   color: var(--text-primary);
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
-/* Dot grid */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: radial-gradient(circle, rgba(253, 246, 244, 0.07) 1px, transparent 1px);
-  background-size: 28px 28px;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Rose gold - to - black top transition */
-body::after {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background:
-    linear-gradient(to bottom, rgba(194, 132, 122, 0.14) 0%, rgba(194, 132, 122, 0.04) 30%, transparent 52%),
-    radial-gradient(ellipse 90% 55% at 50% 0%, rgba(194, 132, 122, 0.11) 0%, transparent 60%),
-    radial-gradient(ellipse 40% 25% at 85% 10%, rgba(160, 98, 90, 0.05) 0%, transparent 50%);
-  pointer-events: none;
-  z-index: 0;
-}
 
 img {
   display: block;
@@ -293,6 +270,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
   max-width: var(--container-width);
   margin: 0 auto;
   height: 72px;
@@ -332,6 +310,9 @@ ul {
   display: flex;
   align-items: center;
   gap: 4px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .navbar-link {
@@ -465,46 +446,10 @@ ul {
 }
 
 .hero-bg-orbs {
-  position: absolute;
-  inset: 0;
+  display: none;
   pointer-events: none;
 }
 
-.orb {
-  position: absolute;
-  border-radius: 50%;
-  filter: blur(100px);
-  opacity: 0.18;
-  animation: orbFloat 8s ease-in-out infinite;
-}
-
-.orb-1 {
-  width: 580px;
-  height: 580px;
-  background: #c2847a;
-  top: -15%;
-  right: -10%;
-  animation-delay: 0s;
-}
-
-.orb-2 {
-  width: 380px;
-  height: 380px;
-  background: #7a4040;
-  bottom: 10%;
-  left: -8%;
-  animation-delay: -3s;
-}
-
-.orb-3 {
-  width: 300px;
-  height: 300px;
-  background: #d4a09a;
-  top: 40%;
-  left: 40%;
-  animation-delay: -5s;
-  opacity: 0.08;
-}
 
 @keyframes orbFloat {
 
@@ -853,7 +798,6 @@ ul {
   display: flex;
   flex-direction: column;
   gap: 12px;
-  margin-top: 28px;
 }
 
 .highlight-item {
@@ -879,8 +823,8 @@ ul {
 }
 
 .about-cards {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
 
@@ -1050,6 +994,13 @@ ul {
   font-size: 0.92rem;
   color: var(--text-secondary);
   line-height: 1.65;
+}
+
+.exp-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 16px;
 }
 
 .exp-bullet::before {
@@ -1347,10 +1298,10 @@ ul {
   max-width: var(--container-width);
   margin: 0 auto;
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 16px;
+  position: relative;
 }
 
 .footer-brand {
@@ -1369,6 +1320,9 @@ ul {
 .footer-copy {
   font-size: 0.82rem;
   color: var(--text-muted);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .footer-copy span {

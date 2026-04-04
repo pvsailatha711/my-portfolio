@@ -48,13 +48,6 @@ function Hero() {
 
   return (
     <section className="hero section" id="home">
-      {/* Background orbs */}
-      <div className="hero-bg-orbs">
-        <div className="orb orb-1" />
-        <div className="orb orb-2" />
-        <div className="orb orb-3" />
-      </div>
-
       <div className="container">
         <div className="hero-layout">
           {/* Left - text */}
