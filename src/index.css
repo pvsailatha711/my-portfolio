@@ -73,6 +73,63 @@ body {
 }
 
 
+/* ===== STARS & METEOR ===== */
+.stars-bg {
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.star {
+  position: absolute;
+  border-radius: 50%;
+  background: #fff;
+  animation: starTwinkle ease-in-out infinite;
+}
+
+@keyframes starTwinkle {
+  0%, 100% { opacity: 0.1; }
+  50%       { opacity: 0.85; }
+}
+
+.meteor {
+  position: absolute;
+  width: 120px;
+  height: 0.7px;
+  border-radius: 100px;
+  opacity: 0.55;
+}
+
+/* Top-left → bottom-right */
+.meteor-ltr {
+  background: linear-gradient(to right, transparent, white);
+  transform: rotate(45deg);
+  animation: meteorLTR 1.8s ease-in forwards;
+}
+
+/* Top-right → bottom-left */
+.meteor-rtl {
+  background: linear-gradient(to left, transparent, white);
+  transform: rotate(-45deg);
+  animation: meteorRTL 1.8s ease-in forwards;
+}
+
+@keyframes meteorLTR {
+  0%   { translate: 0 0;          opacity: 0; }
+  8%   { opacity: 0.55; }
+  90%  { opacity: 0.35; }
+  100% { translate: 520px 520px;  opacity: 0; }
+}
+
+@keyframes meteorRTL {
+  0%   { translate: 0 0;           opacity: 0; }
+  8%   { opacity: 0.55; }
+  90%  { opacity: 0.35; }
+  100% { translate: -520px 520px;  opacity: 0; }
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -328,7 +385,14 @@ ul {
 .navbar-link:hover,
 .navbar-link.active {
   color: var(--text-primary);
-  background: var(--surface);
+  background: rgba(194, 132, 122, 0.12);
+  border: 1px solid var(--accent-violet);
+  box-shadow: 0 0 16px rgba(194, 132, 122, 0.2);
+  transform: translateY(-1px);
+}
+
+.navbar-link {
+  border: 1px solid transparent;
 }
 
 .navbar-link.active::after {
