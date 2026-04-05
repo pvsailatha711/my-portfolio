@@ -23,10 +23,10 @@ function StarsBg() {
       setMeteor({
         key: Date.now(),
         ltr: isLTR,
-        top: 5 + Math.random() * 18,
+        top: Math.random() * 4,          // near top edge
         left: isLTR
-          ? 5 + Math.random() * 15    // top-left start
-          : 65 + Math.random() * 20,  // top-right start
+          ? Math.random() * 5            // top-left corner
+          : 92 + Math.random() * 5,      // top-right corner
       })
       setTimeout(() => setMeteor(null), 2500)
     }
